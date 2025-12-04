@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    transition: background-color 1s ease-in-out;
+    background-color: #F5F5F5;
+}
+header{
+    display: flex;
+    justify-content: end;
+
+}
+.modoescuro{
+    transition: background-color 1s ease-in-out;
+    background-color: black;
+    color: #F5F5F5;
+}
+.caixatema{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    display: flex;
+    width: 40px;
+    background-color: black;
+    height: 20px;
+    border-radius: 50px;
+}
+.bolinha{
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    transform: translateX(0);
+    margin-left: 5px;
+    width: 15px;
+    height:15px;
+    background-color: white;
+    border-radius: 50%;
+    animation:  1s ease;
+}
+.bolinha.ativa{
+    transition: transform 1s ease-in-out;
+    transform: translateX(17px);
+    background-color: black;
+}
+.caixatema.ativa{
+    background-color: white;
+}
+.conteiner{
+    display: flex;
+    justify-content: center;
+    margin: 10rem auto;
+    text-align: center;
+    flex-direction: column;
+}
+.botoes input[type="radio"] {
+    display: none;
+}
+
+.botoes label {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #d1d1d1;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: background-color .3s ease, transform .3s ease;
+}
+
+.botoes input[type="radio"]:checked + label {
+    background-color: black;
+    transform: scale(1.15);
+}
+.main img{
+    width: 90px;
+    height: 90px;
+}
+.main p{
+    font-weight: 600;
+}
+.main{
+    gap: 1rem;
+    display: flex;
+    margin-left: 5rem;
+}
+.oculto{
+    transition:  all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(190px);
+}
+
+main{
+    position: relative;
+}
+.main{
+    position: absolute;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="codigo.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="caixatema">
+            <div onclick="mudartema()" class="bolinha">
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="conteiner">
+            <div class="caixa">
+                <img id="simbolo" width="55px" src="img/devpreto.png" alt="">
+                <h1>Desenvolvedor Web</h1>
+            </div>
+            <div class="botoes">
+                <form id="formulario">
+                    <input id="sydney" name="slider" checked type="radio">
+                    <label for="sydney"></label>
+                    <input id="eric" name="slider" type="radio">
+                    <label for="eric"></label>
+                </form>
+            </div>
+    </section>
+    <main>
+        <section class="main" id="dev">
+            <div>
+                <img src="img/sydneyicon.png" alt="">
+            </div>
+            <div>
+                <p>Meu nome é Sydney, tenho 23 anos, <br> faço faculdade de analise e desenvolvimento de sistemas,<br>
+                    Trabalho como desenvolvedor frontend atualmente <br>
+                    Com foco no desenvolvimento FullStack<br>
+                    Esse site tem como objetivo mostrar alguns projetos e conhecimentos <br>
+                </p>
+            </div>
+        </section>
+        <section class="main oculto" id="design">
+            <div>
+                <img src="img/ericicon.png" alt="">
+            </div>
+            <div>
+                <p>Sou Eric Guedes, profissional de audiovisual com experiência em operação de câmeras (DSLR, broadcast, <br>
+                    robóticas e mirrorless) e gimbal, além de atuação como técnico em transmissões ao vivo. Já trabalhei <br>
+                    em unidades móveis, transmissões esportivas futebol, Jungle Fight e em eventos corporativos e <br>
+                    presenciais, como palestras e mentorias. Também tenho experiência em edição e produção audiovisual, <br>
+                    cuidando desde a parte técnica até a entrega final.
+                </p>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
