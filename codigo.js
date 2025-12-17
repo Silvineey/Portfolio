@@ -9,6 +9,7 @@ const form = document.getElementById("formulario").addEventListener("click", (e)
         const projetosdesign=document.getElementById("projetosdesign")
         const header=document.querySelector("header p")
         const altura=document.getElementById("backgroundmain")
+        const tamanho=window.matchMedia("(max-width:500px)").matches
 
         if (id === "eric") {
             dev.classList.add("oculto")
@@ -17,7 +18,13 @@ const form = document.getElementById("formulario").addEventListener("click", (e)
                 design.style.display="flex"
                 projetosdesign.style.display="block"
                 header.innerHTML="Eric Guedes"
-                altura.style.height="950px"
+                if (tamanho) {
+                    altura.style.height="950px";
+                }
+                else{
+                    altura.style.height=""
+
+                }
             }, 200);
             setTimeout(() => {
                 design.classList.remove("oculto")
@@ -37,7 +44,12 @@ const form = document.getElementById("formulario").addEventListener("click", (e)
                 dev.style.display="flex"
                 projetosdev.style.display="block"
                 header.innerHTML="Silvio Sidney"
-                altura.style.height=""
+                if (tamanho) {
+                    altura.style.height="-330px";
+                }
+                else{
+                    altura.style.height=""
+                }
             }, 200);
             setTimeout(() => {
                 dev.classList.remove("oculto")
