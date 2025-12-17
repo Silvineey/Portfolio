@@ -8,6 +8,7 @@ const form = document.getElementById("formulario").addEventListener("click", (e)
         const projetosdev=document.getElementById("projetosdev")
         const projetosdesign=document.getElementById("projetosdesign")
         const header=document.querySelector("header p")
+        const altura=document.getElementById("backgroundmain")
 
         if (id === "eric") {
             dev.classList.add("oculto")
@@ -16,6 +17,7 @@ const form = document.getElementById("formulario").addEventListener("click", (e)
                 design.style.display="flex"
                 projetosdesign.style.display="block"
                 header.innerHTML="Eric Guedes"
+                altura.style.height="950px"
             }, 200);
             setTimeout(() => {
                 design.classList.remove("oculto")
@@ -35,6 +37,7 @@ const form = document.getElementById("formulario").addEventListener("click", (e)
                 dev.style.display="flex"
                 projetosdev.style.display="block"
                 header.innerHTML="Silvio Sidney"
+                altura.style.height=""
             }, 200);
             setTimeout(() => {
                 dev.classList.remove("oculto")

@@ -84,12 +84,13 @@ header p{
     width: 100vw;
     background-color: var(--cards);
     position: relative;
-    min-height: 1000px;
+    min-height: 750px;
     overflow: hidden;     
 }
 
 /* Cada tela (dev/design) */
 .main{
+    z-index: 999;
     position: absolute;
     top: 0;
     left: 0;
@@ -205,12 +206,16 @@ header p{
     border-radius: 25px;
     box-shadow: 1px 1px 10px black;
 }
-
+.caixadesign{
+    height: 850px;
+}
 @media screen and (max-width:500px){
     header p{
         font-size: 16px;
     }
-
+    .conteiner{
+        margin: 2rem auto;
+    }
     .menubar{
         justify-content: center;
     }
@@ -222,7 +227,7 @@ header p{
         height: 9px;
     }
     .main p{
-        font-size: 13px;
+        font-size: 11px;
     }
     .sobre{
         display: flex;
@@ -238,7 +243,8 @@ header p{
         min-height: auto;
     }
     .nome img{
-        min-width: 150px;
+        width: 100px;
+        min-width: 200px;
         height: auto;
     }
     .nome{
@@ -250,21 +256,23 @@ header p{
         justify-content: center;
     }
     .descricao{
-        min-width: 100px;
+        padding: 25px;
+        min-width: 250px;
     }
     .linha{
-        min-width: 500px;
+        width: 100%;
+        min-width: 350px;
     }
     .habilidades{
         display: none;
     }
     .icons{
-        margin-top: 90px;
+        margin-top: 50px;
         gap: 50px;
         flex-wrap: wrap;
     }
     .icons img{
-        width: 50px;
+        width: 30px;
         height: auto;
     }
     .main p{
