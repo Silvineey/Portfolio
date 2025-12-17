@@ -291,6 +291,7 @@ header p{
         border-radius: 3px;
     }
     #backgroundmain{
-        height: auto;
+        min-height: 750px;
+  
     }
 }

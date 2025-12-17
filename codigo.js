@@ -45,7 +45,7 @@ const form = document.getElementById("formulario").addEventListener("click", (e)
                 projetosdev.style.display="block"
                 header.innerHTML="Silvio Sidney"
                 if (tamanho) {
-                    altura.style.height="-330px";
+                    altura.style.height="750px";
                 }
                 else{
                     altura.style.height=""
